@@ -1,8 +1,8 @@
 package passByValueAndReferance;
 
-public class Primitives {
+public class PrimitivesManipulations {
 
-	public Primitives() {
+	public PrimitivesManipulations() {
 
 	}
 

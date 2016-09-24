@@ -1,6 +1,16 @@
 package passByValueAndReferance;
 
 public class Employee {
+	
+	Employee(String name, int id){
+		this.employeeId = id;
+		this.employeeNmae = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [employeeName=" + employeeNmae + ", employeeId=" + employeeId + "]";
+	}
 
 	private String employeeNmae;
 	private int employeeId;

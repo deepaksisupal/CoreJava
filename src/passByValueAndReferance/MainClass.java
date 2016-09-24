@@ -6,7 +6,11 @@ public class MainClass {
 	}
 
 	public static void main(String[] args) {
-		new Primitives().trigger();
+		new PrimitivesManipulations().trigger();
+		System.out.println("-------------Primitives Ends--------------");
+		System.out.println("-------------Referance Starts--------------");
+		new ArrayManipulations().trigger();
+		new EmployeeManipulations().trigger();
 	}
 
 }
