@@ -1,7 +1,8 @@
 package abstractClasses;
 
 public abstract class Cat {
-	// abstract void clean();
+	Integer COUNT = 10;
+	 abstract void clean();
 }
 /*
  * An abstract class may contain any number of methods including zero. 
