@@ -1,0 +1,98 @@
+Key Points
+
+1. An Interface cannot be instantiated in Java.
+2. Methods declared in a interface should be public and abstract 
+3. Interface cannot have concrete methods(non-abstract methods or methods with body)
+4. variables declared should be public, static & final even though if you miss any one or all the qualifiers it will be automatically assigned. Lets see all the valid scenarios.
+interface Test
+
+5. Interface variables must be initialized at the time of declaration else the compiler will throw error. Below is not a valid declaration
+interface Test
+{
+int a;
+}
+
+An Interface can only extend other interface (only one)
+A Class can implement any number of interface
+interface Interface1
+{
+    public void method1();
+}
+interface Interface2 extends Interface1
+{
+    public void method2();
+}
+public class Demo implements Interface1,Interface2
+{
+    @Override
+    public void method2() 
+    {
+    }
+    @Override
+    public void method1() 
+    {
+    }
+    public static void main(String args[])
+    {
+    }
+}
+If two interface have methods with same signature and same return type then the implementing class can implement any one of those.
+interface Interface1
+{
+    public void method1();
+}
+interface Interface2 
+{
+    public void method1();
+}
+public class Demo implements Interface1,Interface2
+{
+    @Override
+    public void method1() 
+    {
+    }
+    public static void main(String args[])
+    {
+    }
+}
+If two interface have methods with same signature and different return type cannot be implemented at the same time
+interface Interface1
+{
+    public void method1();
+}
+interface Interface2 
+{
+    public int method1();
+}
+public class Demo implements Interface1,Interface2
+{
+    @Override
+    public void method1() //will throw compilation error
+    {
+    }
+    @Override
+    public int method1() //will throw compilation error
+    {
+    }
+    public static void main(String args[])
+    {
+    }
+}
+In the implementing class we cannot change the variable value which is declared in the interface as it is final by default
+interface Interface1
+{
+    int val=10;
+    public void method1();
+}
+
+public class Demo implements Interface1
+{
+    @Override
+    public void method1() 
+    {
+    }
+    public static void main(String args[])
+    {
+        Interface1.val=20; //Will throw compilation error
+    }
+}

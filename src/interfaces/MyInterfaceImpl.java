@@ -1,7 +1,7 @@
 package interfaces;
 
 public class MyInterfaceImpl implements MyInterface {
-
+//A Class can implement any number of interface
 	public MyInterfaceImpl() {
 		// TODO Auto-generated constructor stub
 	}
@@ -22,6 +22,11 @@ public class MyInterfaceImpl implements MyInterface {
 	public void sayHello() {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	public void blinker(String a) {
+		// TODO Auto-generated method stub
 	}
 
 }
