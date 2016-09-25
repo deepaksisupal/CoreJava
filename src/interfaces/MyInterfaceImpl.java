@@ -1,6 +1,6 @@
 package interfaces;
 
-public class MyInterfaceImpl implements MyInterface {
+public class MyInterfaceImpl implements MyInterface,MarkerInterface {
 //A Class can implement any number of interface
 	public MyInterfaceImpl() {
 		// TODO Auto-generated constructor stub
