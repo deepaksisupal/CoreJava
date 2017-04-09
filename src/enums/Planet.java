@@ -1,5 +1,14 @@
 package enums;
 
+import annotation.interfaces.ClassPreamble;
+
+@ClassPreamble(
+		author="deepak",
+		currentRevision=2,
+		date="04/09/17",
+		lastModified="04/09/17",
+		lastModifiedBy="Deepak", 
+		reviewers={"Alice", "Bob", "Cindy"})
 public enum Planet {
     MERCURY (3.303e+23, 2.4397e6),
     VENUS   (4.869e+24, 6.0518e6),
