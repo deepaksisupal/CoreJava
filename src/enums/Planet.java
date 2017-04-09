@@ -1,5 +1,8 @@
 package enums;
 
+import java.util.Arrays;
+import java.util.List;
+
 import annotation.interfaces.ClassPreamble;
 
 @ClassPreamble(
@@ -35,7 +38,10 @@ public enum Planet {
         return G * mass / (radius * radius);
     }
     double surfaceWeight(double otherMass) {
+    	List<? extends Object> ints = Arrays.<String>asList("1","A");
+    	System.out.println(ints);
         return otherMass * surfaceGravity();
+        
     }
     public static void main(String[] args) {
         if (args.length != 1) {
